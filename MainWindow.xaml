@@ -1,0 +1,33 @@
+﻿<Window x:Class="BaiTap1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BaiTap1"
+        mc:Ignorable="d"
+        Title="Bài Tổng 2 số   SE.170586-Nguyễn Bình Luân" Height="450" Width="800">
+    <StackPanel Margin="0,0,0,-16">
+        <Label Target="{Binding ElementName=txtA}">
+            Hệ Số _a:</Label>
+        <TextBox Name="txtA"></TextBox>
+        <Label Target="{Binding ElementName=txtB}">
+            Hệ Số _b:</Label>
+        <TextBox Name="txtB"></TextBox>
+        <TextBlock>Kết quả:</TextBlock>
+        <TextBlock Name="tbKetQua" Background="Yellow"></TextBlock>
+        <StackPanel Orientation="Horizontal">
+            <Button Name="btnTong" Width="100" Margin="10" Click="BtnTong_Click">
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="/Image/1564491_add_create_new_plus_icon.png" Height="22" Width="36" />
+                    <TextBlock Margin="5,0">Tổng</TextBlock>
+                </StackPanel>
+            </Button>
+            <Button Name="btnThoat" Width="100" Margin="10" Click="BtnThoat_Click">
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="/Image/8673579_ic_fluent_picture_in_exit_icon.png" Height="21" Width="47"/>
+                    <TextBlock Margin="5,0">Thoát</TextBlock>
+                </StackPanel>
+            </Button>
+        </StackPanel>
+    </StackPanel>
+</Window>
